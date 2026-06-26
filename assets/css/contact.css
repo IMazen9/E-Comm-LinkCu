@@ -1,0 +1,246 @@
+:root{
+    --dark-red: #810B38;
+    --cream: #F1E2D1;
+    --beige: #DCC3AA;
+    --dark-brown: #541A1A;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("../images/contact.png");
+    background-size: cover;
+    z-index: -1;
+}
+
+.page h1 {
+    color: var(--dark-red);
+    text-align: center;
+    font-size: 40px;
+}
+
+.page p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    color:var(--cream);
+}
+
+.page form{
+     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    color:var(--cream);
+    
+}
+
+.page button {
+    background-color: var(--dark-red);
+    color: white;
+    font-size: 25px;
+}
+
+.page button:hover {
+    background-color: var(--dark-brown);
+}
+
+.page input,.page textarea{
+    border: 2px solid var(--beige);
+    font-size: 25px;
+    color: white;
+    background-color:transparent;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.page h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight:bold;
+    color:var(--cream);
+}
+
+iframe {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* start header */
+
+#header .logo {
+  width: 100px;
+  height: 100px;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #541a1a;
+  box-shadow: 0 10px 60px rgba(0, 150, 150, 0.1);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 600;
+  color:#DCC3AA;
+  transition: 0.3s ease;
+}
+
+#navbar li a::after {
+  content: "";
+  width: 0;                  
+  height: 3px;
+  background: #DCC3AA;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;                 
+  transform: translateX(-50%);
+  transition: width 0.3s ease;  
+}
+#navbar li a:hover::after{
+  width: 30%;  
+
+}
+
+#mobile{
+  display: none;
+}
+
+#close{
+  display: none;
+}
+
+/* start footer */
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+#footer .footer-box {
+  flex: 1;           
+  min-width: 250px;  
+}
+
+#footer button:hover{
+  background: #DCC3AA;
+  color: #fff;
+}
+
+#footer{
+    background-image:linear-gradient(to right,#810B38,#541a1a) ;
+    color: #fff;
+}
+
+
+
+.footer-box{
+    padding: 20px;
+}
+
+.footer-box img{
+    width: 120px;
+    margin-bottom:20px
+}
+
+.footer-box .fa-solid{
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-image:linear-gradient(to right,#541a1a,#F1E2D1) ;
+}
+
+
+.footer-box .form-control {
+  width: 100%;
+  max-width: 250px;
+  padding: 10px 12px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: none;
+  margin-top: 25px;
+  color: #000;
+}
+
+.footer-box .form-control:focus {
+  outline: 2px solid #DCC3AA;
+}
+
+
+
+.follow .fa-brands{
+    font-size: 20px;
+    margin: 10px;
+    color: #ff4d73;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.follow .fa-brands{
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.follow .fa-brands:hover{
+    font-size: 25px;
+    color: aqua;
+}
+
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.3s ease;
+  margin-top: 12px;
+}
+
